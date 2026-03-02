@@ -29,7 +29,8 @@ export function registerSearchLawTool(server: McpServer) {
 
         const lines = results.map((r, i) => {
           const info = r.law_info;
-          return `${i + 1}. **${info.law_title}**\n   法令番号: ${info.law_num} | law_id: ${info.law_id} | 種別: ${info.law_type}\n   URL: ${getEgovUrl(info.law_id)}`;
+          const title = r.revision_info?.law_title ?? r.current_revision_info?.law_title ?? '(タイトル不明)';
+          return `${i + 1}. **${title}**\n   法令番号: ${info.law_num} | law_id: ${info.law_id} | 種別: ${info.law_type}\n   URL: ${getEgovUrl(info.law_id)}`;
         });
 
         return toolResult(

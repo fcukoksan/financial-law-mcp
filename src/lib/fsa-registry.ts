@@ -41,28 +41,28 @@ export const GUIDELINE_REGISTRY: Record<string, GuidelineEntry> = {
   },
   '開示ガイドライン': {
     name: '企業内容等の開示に関する留意事項について（企業内容等開示ガイドライン）',
-    url: 'https://www.fsa.go.jp/common/law/kaiji/kaiji-guide.pdf',
+    url: 'https://www.fsa.go.jp/common/law/kaiji/260220_kaiji.pdf',
     format: 'pdf',
     type: 'guideline',
     domain: 'kinsho',
   },
   'FDルールガイドライン': {
     name: '金融商品取引法第27条の36の規定に関する留意事項について（フェア・ディスクロージャー・ルールガイドライン）',
-    url: 'https://www.fsa.go.jp/common/law/kaiji/fd-guideline.pdf',
+    url: 'https://www.fsa.go.jp/common/law/kaiji/20180206-2.pdf',
     format: 'pdf',
     type: 'guideline',
     domain: 'kinsho',
   },
   '財規ガイドライン': {
     name: '「財務諸表等の用語、様式及び作成方法に関する規則」の取扱いに関する留意事項について（財務諸表等規則ガイドライン）',
-    url: 'https://www.fsa.go.jp/common/law/kaiji/zaimu-guide.pdf',
+    url: 'https://www.fsa.go.jp/common/law/kaiji/zaiki.pdf',
     format: 'pdf',
     type: 'guideline',
     domain: 'kaikei',
   },
   '連結財規ガイドライン': {
     name: '「連結財務諸表の用語、様式及び作成方法に関する規則」の取扱いに関する留意事項について（連結財務諸表規則ガイドライン）',
-    url: 'https://www.fsa.go.jp/common/law/kaiji/renketsu-guide.pdf',
+    url: 'https://www.fsa.go.jp/common/law/kaiji/renketuzaiki.pdf',
     format: 'pdf',
     type: 'guideline',
     domain: 'kaikei',
@@ -131,38 +131,45 @@ export const GUIDELINE_REGISTRY: Record<string, GuidelineEntry> = {
   // ============================
   '定義Q&A': {
     name: '金融商品取引法第２条に規定する定義に関するQ&A',
-    url: 'https://www.fsa.go.jp/common/law/kokuji/teigi-qa.pdf',
+    url: 'https://www.fsa.go.jp/news/28/sonota/20161226-2/01.pdf',
     format: 'pdf',
     type: 'qa',
     domain: 'kinsho',
   },
   '金商業等Q&A': {
     name: '金融商品取引業等に関するQ&A',
-    url: 'https://www.fsa.go.jp/common/law/kokuji/kinshougyou-qa.pdf',
+    url: 'https://www.fsa.go.jp/common/law/20251031.pdf',
     format: 'pdf',
     type: 'qa',
     domain: 'kinsho',
   },
   'インサイダーQ&A': {
     name: 'インサイダー取引規制に関するQ&A',
-    url: 'https://www.fsa.go.jp/common/law/kokuji/insider-qa.pdf',
+    url: 'https://www.fsa.go.jp/common/law/insider_qa_.pdf',
     format: 'pdf',
     type: 'qa',
     domain: 'kinsho',
   },
   '情報伝達Q&A': {
     name: '情報伝達・取引推奨規制に関するQ&A',
-    url: 'https://www.fsa.go.jp/common/law/kokuji/jouhou-qa.pdf',
+    url: 'https://www.fsa.go.jp/news/25/syouken/20130912-1/01.pdf',
     format: 'pdf',
     type: 'qa',
     domain: 'kinsho',
   },
   '暗号資産Q&A': {
     name: '自己資本規制告示における暗号資産の取扱いに関するQ&A',
-    url: 'https://www.fsa.go.jp/common/law/kokuji/crypto-qa.pdf',
+    url: 'https://www.fsa.go.jp/common/law/angoushisan-qanda.pdf',
     format: 'pdf',
     type: 'qa',
     domain: 'kinsho',
+  },
+  '保険業該当性Q&A': {
+    name: '保険業該当性に関するQ&A',
+    url: 'https://www.fsa.go.jp/common/law/hokenngaitouseiqanda.pdf',
+    format: 'pdf',
+    type: 'qa',
+    domain: 'hoken',
   },
 };
 
@@ -203,6 +210,8 @@ export const GUIDELINE_ALIAS: Record<string, string> = {
   '情報伝達QA': '情報伝達Q&A',
   '暗号資産QA': '暗号資産Q&A',
   'cryptoQA': '暗号資産Q&A',
+  '保険業該当性QA': '保険業該当性Q&A',
+  '保険QA': '保険業該当性Q&A',
 };
 
 // ============================================================

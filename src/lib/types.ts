@@ -5,10 +5,15 @@ export interface EgovLawSearchResult {
     law_id: string;
     law_type: string;
     law_num: string;
-    law_title: string;
     promulgation_date: string;
-    amendment_law_id?: string;
-    amendment_promulgation_date?: string;
+  };
+  /** 最新改正版の情報（法令名はここに入る） */
+  revision_info: {
+    law_title: string;
+    law_num?: string;
+  };
+  current_revision_info?: {
+    law_title: string;
   };
 }
 
