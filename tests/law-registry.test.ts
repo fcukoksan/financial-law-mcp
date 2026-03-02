@@ -33,6 +33,37 @@ describe('law-registry', () => {
       expect(result.lawId).toBe('419AC0000000022');
     });
 
+    it('保険法が保険業法と別エントリとして解決できる', () => {
+      const hokenho = resolveLawName('保険法');
+      expect(hokenho.lawId).toBe('420AC0000000056');
+      const hokengyoho = resolveLawName('保険業法');
+      expect(hokengyoho.lawId).toBe('407AC0000000105');
+    });
+
+    it('銀行法施行規則が解決できる', () => {
+      const result = resolveLawName('銀行法施行規則');
+      expect(result.lawId).toBe('357M50000040010');
+      expect(result.domain).toBe('ginko');
+    });
+
+    it('貸金業法施行規則が解決できる', () => {
+      const result = resolveLawName('貸金業法施行規則');
+      expect(result.lawId).toBe('358M50000040040');
+      expect(result.domain).toBe('kashikin');
+    });
+
+    it('保険業法施行規則が解決できる', () => {
+      const result = resolveLawName('保険業法施行規則');
+      expect(result.lawId).toBe('408M50000040005');
+      expect(result.domain).toBe('hoken');
+    });
+
+    it('前払式支払手段に関する内閣府令が解決できる', () => {
+      const result = resolveLawName('前払式府令');
+      expect(result.name).toBe('前払式支払手段に関する内閣府令');
+      expect(result.lawId).toBe('422M60000002003');
+    });
+
     it('未登録の法令名はnullを返す', () => {
       const result = resolveLawName('存在しない法律');
       expect(result.lawId).toBeNull();

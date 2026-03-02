@@ -92,6 +92,16 @@ export const LAW_ID_MAP: Record<string, LawEntry> = {
     domain: 'shikin',
     lawType: 'CabinetOrder',
   },
+  '前払式支払手段に関する内閣府令': {
+    lawId: '422M60000002003',
+    domain: 'shikin',
+    lawType: 'MinisterialOrdinance',
+  },
+  '資金移動業者に関する内閣府令': {
+    lawId: '422M60000002004',
+    domain: 'shikin',
+    lawType: 'MinisterialOrdinance',
+  },
 
   // ============================
   // 銀行法系 (ginko)
@@ -105,6 +115,11 @@ export const LAW_ID_MAP: Record<string, LawEntry> = {
     lawId: '357CO0000000040',
     domain: 'ginko',
     lawType: 'CabinetOrder',
+  },
+  '銀行法施行規則': {
+    lawId: '357M50000040010',
+    domain: 'ginko',
+    lawType: 'MinisterialOrdinance',
   },
 
   // ============================
@@ -120,10 +135,20 @@ export const LAW_ID_MAP: Record<string, LawEntry> = {
     domain: 'kashikin',
     lawType: 'CabinetOrder',
   },
+  '貸金業法施行規則': {
+    lawId: '358M50000040040',
+    domain: 'kashikin',
+    lawType: 'MinisterialOrdinance',
+  },
 
   // ============================
   // 保険業法系 (hoken)
   // ============================
+  '保険法': {
+    lawId: '420AC0000000056',
+    domain: 'hoken',
+    lawType: 'Act',
+  },
   '保険業法': {
     lawId: '407AC0000000105',
     domain: 'hoken',
@@ -133,6 +158,11 @@ export const LAW_ID_MAP: Record<string, LawEntry> = {
     lawId: '407CO0000000425',
     domain: 'hoken',
     lawType: 'CabinetOrder',
+  },
+  '保険業法施行規則': {
+    lawId: '408M50000040005',
+    domain: 'hoken',
+    lawType: 'MinisterialOrdinance',
   },
 
   // ============================
@@ -197,19 +227,23 @@ export const LAW_ALIAS_MAP: Record<string, string> = {
   '資決法': '資金決済に関する法律',
   '資金決済法': '資金決済に関する法律',
   '資決令': '資金決済に関する法律施行令',
+  '前払式府令': '前払式支払手段に関する内閣府令',
+  '資金移動業府令': '資金移動業者に関する内閣府令',
 
   // 銀行法系
   '銀法': '銀行法',
   '銀行令': '銀行法施行令',
+  '銀行規則': '銀行法施行規則',
 
   // 貸金業法系
   '貸金法': '貸金業法',
   '貸金令': '貸金業法施行令',
+  '貸金規則': '貸金業法施行規則',
 
   // 保険業法系
   '保業法': '保険業法',
-  '保険法': '保険業法',
   '保業令': '保険業法施行令',
+  '保業規則': '保険業法施行規則',
 
   // 信託法・信託業法系
   '信託業': '信託業法',
