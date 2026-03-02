@@ -114,6 +114,85 @@ export const GUIDELINE_REGISTRY: Record<string, GuidelineEntry> = {
     type: 'supervisory',
     domain: 'shintaku',
   },
+  '少額短期保険業者監督指針': {
+    name: '少額短期保険業者向けの監督指針',
+    url: 'https://www.fsa.go.jp/common/law/guide/syougaku/index.html',
+    pdfUrl: 'https://www.fsa.go.jp/common/law/guide/syougaku.pdf',
+    format: 'html',
+    type: 'supervisory',
+    domain: 'hoken',
+  },
+  '認可特定保険業者監督指針': {
+    name: '認可特定保険業者向けの総合的な監督指針',
+    url: 'https://www.fsa.go.jp/common/law/guide/ninka/index.html',
+    pdfUrl: 'https://www.fsa.go.jp/common/law/guide/ninka_a.pdf',
+    format: 'html',
+    type: 'supervisory',
+    domain: 'hoken',
+  },
+  '信用格付業者監督指針': {
+    name: '信用格付業者向けの監督指針',
+    url: 'https://www.fsa.go.jp/common/law/guide/kakuduke/index.html',
+    pdfUrl: 'https://www.fsa.go.jp/common/law/guide/kakuduke/kakuduke.pdf',
+    format: 'html',
+    type: 'supervisory',
+    domain: 'kinsho',
+  },
+  '高速取引行為者監督指針': {
+    name: '高速取引行為者向けの監督指針',
+    url: 'https://www.fsa.go.jp/common/law/guide/hft/index.html',
+    pdfUrl: 'https://www.fsa.go.jp/common/law/guide/hft/hft.pdf',
+    format: 'html',
+    type: 'supervisory',
+    domain: 'kinsho',
+  },
+  '投資運用受託業者監督指針': {
+    name: '投資運用関係業務受託業者向けの監督指針',
+    url: 'https://www.fsa.go.jp/common/law/guide/im-rs/index.html',
+    pdfUrl: 'https://www.fsa.go.jp/common/law/guide/im-rs/im-rs.pdf',
+    format: 'html',
+    type: 'supervisory',
+    domain: 'kinsho',
+  },
+  '金融サービス仲介業者監督指針': {
+    name: '金融サービス仲介業者向けの総合的な監督指針',
+    url: 'https://www.fsa.go.jp/common/law/guide/kinsa/index.html',
+    format: 'html',
+    type: 'supervisory',
+    domain: 'kinsho',
+  },
+  '信用保証協会監督指針': {
+    name: '信用保証協会向けの総合的な監督指針',
+    url: 'https://www.fsa.go.jp/common/law/guide/hosyokyokai/index.html',
+    pdfUrl: 'https://www.fsa.go.jp/common/law/guide/hoshokyokai.pdf',
+    format: 'html',
+    type: 'supervisory',
+    domain: 'ginko',
+  },
+  '清算振替機関監督指針': {
+    name: '清算・振替機関等向けの総合的な監督指針',
+    url: 'https://www.fsa.go.jp/common/law/guide/seisan/index.html',
+    pdfUrl: 'https://www.fsa.go.jp/common/law/guide/seisan/seisan.pdf',
+    format: 'html',
+    type: 'supervisory',
+    domain: 'kinsho',
+  },
+  '為替取引分析業者監督指針': {
+    name: '為替取引分析業者向けの総合的な監督指針',
+    url: 'https://www.fsa.go.jp/common/law/guide/ftta/index.html',
+    pdfUrl: 'https://www.fsa.go.jp/common/law/guide/ftta.pdf',
+    format: 'html',
+    type: 'supervisory',
+    domain: 'shikin',
+  },
+  '指定紛争解決機関監督指針': {
+    name: '指定紛争解決機関向けの総合的な監督指針',
+    url: 'https://www.fsa.go.jp/common/law/guide/kinyuadr/index.html',
+    pdfUrl: 'https://www.fsa.go.jp/common/law/guide/kinyuadr.pdf',
+    format: 'html',
+    type: 'supervisory',
+    domain: 'kinsho',
+  },
 
   // ============================
   // 事務ガイドライン（第三分冊：金融会社関係）
@@ -171,6 +250,13 @@ export const GUIDELINE_REGISTRY: Record<string, GuidelineEntry> = {
     type: 'qa',
     domain: 'hoken',
   },
+  '貸金業法Q&A': {
+    name: '貸金業法に関するQ&A',
+    url: 'https://www.fsa.go.jp/policy/kashikin/qa.html',
+    format: 'html',
+    type: 'qa',
+    domain: 'kashikin',
+  },
 };
 
 // ============================================================
@@ -196,6 +282,16 @@ export const GUIDELINE_ALIAS: Record<string, string> = {
   '保険監督指針': '保険会社監督指針',
   '貸金監督指針': '貸金業者監督指針',
   '信託監督指針': '信託会社等監督指針',
+  '少額短期保険監督指針': '少額短期保険業者監督指針',
+  '少短監督指針': '少額短期保険業者監督指針',
+  '格付業者監督指針': '信用格付業者監督指針',
+  'HFT監督指針': '高速取引行為者監督指針',
+  '金融サービス仲介監督指針': '金融サービス仲介業者監督指針',
+  'FS仲介監督指針': '金融サービス仲介業者監督指針',
+  '信用保証協会監督': '信用保証協会監督指針',
+  '清算機関監督指針': '清算振替機関監督指針',
+  '為替分析業者監督指針': '為替取引分析業者監督指針',
+  'ADR監督指針': '指定紛争解決機関監督指針',
 
   // 事務ガイドライン
   '事務GL': '事務ガイドライン（金融会社）',
@@ -212,6 +308,8 @@ export const GUIDELINE_ALIAS: Record<string, string> = {
   'cryptoQA': '暗号資産Q&A',
   '保険業該当性QA': '保険業該当性Q&A',
   '保険QA': '保険業該当性Q&A',
+  '貸金QA': '貸金業法Q&A',
+  '貸金業QA': '貸金業法Q&A',
 };
 
 // ============================================================
